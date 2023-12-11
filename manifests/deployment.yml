@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: codervuxmlopspython 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: codervuxmlopspython
+  template:
+    metadata:
+      labels:
+        app: codervuxmlopspython 
+    spec:
+      containers:
+        - name: codervuxmlopspython 
+          image: is402amlcr.azurecr.io/codervuxmlopspython
+          ports:
+          - containerPort: 80
