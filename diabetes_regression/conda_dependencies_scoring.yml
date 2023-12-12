@@ -30,3 +30,6 @@ dependencies:
       # Scoring deps
       - scikit-learn
       - pandas
+
+      # FIX dataclasses missing error
+      - dataclasses
